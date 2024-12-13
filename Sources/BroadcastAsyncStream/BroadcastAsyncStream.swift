@@ -90,7 +90,11 @@ public final class AnyBroadcastAsyncStream<Element: Sendable> {
 @MainActor
 public final class BroadcastAsyncStream<Element: Sendable> {
 
-    private var store: [String: AsyncStream<Element>.Continuation] = [:]
+    private var store: [String: AsyncStream<Element>.Continuation]
+
+    public init() {
+        self.store = [:]
+    }
 
     // MARK: - Public
 
@@ -106,9 +110,7 @@ public final class BroadcastAsyncStream<Element: Sendable> {
         store.forEach({ $1.finish() })
     }
 
-    // MARK: - Private
-
-    internal func makeAsyncStream() -> AsyncStream<Element> {
+    public func makeAsyncStream() -> AsyncStream<Element> {
         let (stream, continuation) = AsyncStream<Element>.makeStream()
         let key = UUID().uuidString
         store[key] = continuation

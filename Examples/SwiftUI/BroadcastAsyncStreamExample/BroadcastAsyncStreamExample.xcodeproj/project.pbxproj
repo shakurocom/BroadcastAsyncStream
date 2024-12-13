@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A59601032D0C034300FB3088 /* BroadcastAsyncStream in Frameworks */ = {isa = PBXBuildFile; productRef = A59601022D0C034300FB3088 /* BroadcastAsyncStream */; };
+		A596010E2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */; };
+		A596010F2D0C048000FB3088 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010B2D0C048000FB3088 /* MainService.swift */; };
+		A59601102D0C048000FB3088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010C2D0C048000FB3088 /* ContentView.swift */; };
+		A59601112D0C048000FB3088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59601092D0C048000FB3088 /* Assets.xcassets */; };
+		A59601122D0C048000FB3088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59601072D0C048000FB3088 /* Preview Assets.xcassets */; };
+		A59601152D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601132D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests.swift */; };
+		A59601192D0C050800FB3088 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601172D0C050800FB3088 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */; };
+		A596011A2D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59601162D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A576EFE92D0A132600F3C3D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,31 +39,23 @@
 		A576EFD82D0A132400F3C3D5 /* BroadcastAsyncStreamExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastAsyncStreamExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFE82D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFF22D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59601012D0C032000FB3088 /* BroadcastAsyncStream */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BroadcastAsyncStream; path = ../../..; sourceTree = "<group>"; };
+		A59601072D0C048000FB3088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A59601092D0C048000FB3088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleApp.swift; sourceTree = "<group>"; };
+		A596010B2D0C048000FB3088 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		A596010C2D0C048000FB3088 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A59601132D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleTests.swift; sourceTree = "<group>"; };
+		A59601162D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleUITests.swift; sourceTree = "<group>"; };
+		A59601172D0C050800FB3088 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A576EFDA2D0A132400F3C3D5 /* BroadcastAsyncStreamExample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BroadcastAsyncStreamExample;
-			sourceTree = "<group>";
-		};
-		A576EFEB2D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BroadcastAsyncStreamExampleTests;
-			sourceTree = "<group>";
-		};
-		A576EFF52D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BroadcastAsyncStreamExampleUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A576EFD52D0A132400F3C3D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59601032D0C034300FB3088 /* BroadcastAsyncStream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +79,10 @@
 		A576EFCF2D0A132400F3C3D5 = {
 			isa = PBXGroup;
 			children = (
-				A576EFDA2D0A132400F3C3D5 /* BroadcastAsyncStreamExample */,
-				A576EFEB2D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests */,
-				A576EFF52D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests */,
+				A596010D2D0C048000FB3088 /* BroadcastAsyncStreamExample */,
+				A59601142D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests */,
+				A59601182D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests */,
+				A59601002D0C032000FB3088 /* Frameworks */,
 				A576EFD92D0A132400F3C3D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +95,51 @@
 				A576EFF22D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A59601002D0C032000FB3088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A59601012D0C032000FB3088 /* BroadcastAsyncStream */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A59601082D0C048000FB3088 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A59601072D0C048000FB3088 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A596010D2D0C048000FB3088 /* BroadcastAsyncStreamExample */ = {
+			isa = PBXGroup;
+			children = (
+				A59601082D0C048000FB3088 /* Preview Content */,
+				A59601092D0C048000FB3088 /* Assets.xcassets */,
+				A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */,
+				A596010B2D0C048000FB3088 /* MainService.swift */,
+				A596010C2D0C048000FB3088 /* ContentView.swift */,
+			);
+			path = BroadcastAsyncStreamExample;
+			sourceTree = "<group>";
+		};
+		A59601142D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A59601132D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests.swift */,
+			);
+			path = BroadcastAsyncStreamExampleTests;
+			sourceTree = "<group>";
+		};
+		A59601182D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A59601162D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests.swift */,
+				A59601172D0C050800FB3088 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */,
+			);
+			path = BroadcastAsyncStreamExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +157,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A576EFDA2D0A132400F3C3D5 /* BroadcastAsyncStreamExample */,
-			);
 			name = BroadcastAsyncStreamExample;
 			packageProductDependencies = (
+				A59601022D0C034300FB3088 /* BroadcastAsyncStream */,
 			);
 			productName = BroadcastAsyncStreamExample;
 			productReference = A576EFD82D0A132400F3C3D5 /* BroadcastAsyncStreamExample.app */;
@@ -129,9 +177,6 @@
 			);
 			dependencies = (
 				A576EFEA2D0A132600F3C3D5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A576EFEB2D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests */,
 			);
 			name = BroadcastAsyncStreamExampleTests;
 			packageProductDependencies = (
@@ -152,9 +197,6 @@
 			);
 			dependencies = (
 				A576EFF42D0A132600F3C3D5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A576EFF52D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests */,
 			);
 			name = BroadcastAsyncStreamExampleUITests;
 			packageProductDependencies = (
@@ -195,6 +237,8 @@
 			);
 			mainGroup = A576EFCF2D0A132400F3C3D5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A576EFD92D0A132400F3C3D5 /* Products */;
 			projectDirPath = "";
@@ -212,6 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59601112D0C048000FB3088 /* Assets.xcassets in Resources */,
+				A59601122D0C048000FB3088 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A596010E2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift in Sources */,
+				A596010F2D0C048000FB3088 /* MainService.swift in Sources */,
+				A59601102D0C048000FB3088 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59601152D0C04F700FB3088 /* BroadcastAsyncStreamExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59601192D0C050800FB3088 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift in Sources */,
+				A596011A2D0C050800FB3088 /* BroadcastAsyncStreamExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +604,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A59601022D0C034300FB3088 /* BroadcastAsyncStream */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BroadcastAsyncStream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A576EFD02D0A132400F3C3D5 /* Project object */;
 }
