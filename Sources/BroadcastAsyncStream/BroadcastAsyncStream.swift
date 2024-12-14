@@ -4,7 +4,6 @@
 
 import Foundation
 
-// TODO: move to library (create new)
 public final class AnyAsyncTask {
 
     private let cancelTaskBlock: () -> Void
@@ -50,33 +49,21 @@ extension Task {
 }
 
 @MainActor
-public final class AnyBroadcastAsyncStream<Element: Sendable> {
-
-    private let broadcastAsyncStream: BroadcastAsyncStream<Element>
-
-    // MARK: - Initialization
-
-    internal init(_ broadcastAsyncStream: BroadcastAsyncStream<Element>) {
-        self.broadcastAsyncStream = broadcastAsyncStream
-    }
+extension AsyncStream where Element: Sendable {
 
     // MARK: - Public
 
     public func subscribe(_ onEvent: @escaping @MainActor (Element) -> Void) async {
-        let stream = broadcastAsyncStream.makeAsyncStream()
-        for await element in stream {
+        for await element in self {
             onEvent(element)
         }
     }
 
     public func subscribe(_ onEvent: @escaping @MainActor (Element) -> Void) -> AnyAsyncTask {
-        let asyncStream = broadcastAsyncStream.makeAsyncStream()
         return _Concurrency.Task(operation: {
-            for await element in asyncStream {
+            for await element in self {
                 onEvent(element)
             }
-            // TODO: implement
-            print("TODO: implement - check finished!!!! - remove from broadcastAsyncStream by UUID from store")
         }).eraseToAnyTask
     }
 
@@ -92,15 +79,13 @@ public final class BroadcastAsyncStream<Element: Sendable> {
 
     private var store: [String: AsyncStream<Element>.Continuation]
 
+    // MARK: - Initialization
+
     public init() {
         self.store = [:]
     }
 
     // MARK: - Public
-
-    public func eraseToAnyStream() -> AnyBroadcastAsyncStream<Element> {
-        return AnyBroadcastAsyncStream(self)
-    }
 
     public func send(_ element: Element) {
         store.forEach({ $1.yield(element) })

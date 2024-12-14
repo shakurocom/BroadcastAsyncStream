@@ -2,27 +2,29 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject private var mainService: MainService
+    private var mainService: MainService
 
     init(mainService: MainService) {
         self.mainService = mainService
     }
 
     var body: some View {
-        mainView()
-            .task({
-                mainService.didSucceedChangeQuantityOfBasketItemStream.subs
+        NavigationView(content: {
+            List(content: {
+                NavigationLink(destination: {
+                    DetailsView(mainService: mainService)
+                }, label: {
+                    Text("Details")
+                })
+                NavigationLink(destination: {
+                    DetailsWithViewModelView(mainService: mainService)
+                }, label: {
+                    Text("Details with view model")
+                })
             })
-    }
-
-    private func mainView() -> some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+            .navigationTitle("Content")
+            .navigationBarTitleDisplayMode(.inline)
+        })
     }
 
 }

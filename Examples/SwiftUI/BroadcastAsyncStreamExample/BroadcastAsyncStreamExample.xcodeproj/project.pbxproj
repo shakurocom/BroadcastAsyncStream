@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53FF0B62D0E279300086783 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B52D0E279300086783 /* DetailsView.swift */; };
+		A53FF0B82D0E2C9900086783 /* DetailsWithViewModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B72D0E2C9900086783 /* DetailsWithViewModelView.swift */; };
+		A53FF0BA2D0E2CB000086783 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B92D0E2CA400086783 /* DetailsViewModel.swift */; };
 		A59601032D0C034300FB3088 /* BroadcastAsyncStream in Frameworks */ = {isa = PBXBuildFile; productRef = A59601022D0C034300FB3088 /* BroadcastAsyncStream */; };
 		A596010E2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */; };
 		A596010F2D0C048000FB3088 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010B2D0C048000FB3088 /* MainService.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53FF0B52D0E279300086783 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		A53FF0B72D0E2C9900086783 /* DetailsWithViewModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWithViewModelView.swift; sourceTree = "<group>"; };
+		A53FF0B92D0E2CA400086783 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		A576EFD82D0A132400F3C3D5 /* BroadcastAsyncStreamExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastAsyncStreamExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFE82D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFF22D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +127,9 @@
 				A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */,
 				A596010B2D0C048000FB3088 /* MainService.swift */,
 				A596010C2D0C048000FB3088 /* ContentView.swift */,
+				A53FF0B52D0E279300086783 /* DetailsView.swift */,
+				A53FF0B72D0E2C9900086783 /* DetailsWithViewModelView.swift */,
+				A53FF0B92D0E2CA400086783 /* DetailsViewModel.swift */,
 			);
 			path = BroadcastAsyncStreamExample;
 			sourceTree = "<group>";
@@ -283,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A596010E2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift in Sources */,
+				A53FF0B62D0E279300086783 /* DetailsView.swift in Sources */,
 				A596010F2D0C048000FB3088 /* MainService.swift in Sources */,
 				A59601102D0C048000FB3088 /* ContentView.swift in Sources */,
+				A53FF0B82D0E2C9900086783 /* DetailsWithViewModelView.swift in Sources */,
+				A53FF0BA2D0E2CB000086783 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ struct BroadcastAsyncStreamExampleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(mainService: mainService)
         }
     }
 
