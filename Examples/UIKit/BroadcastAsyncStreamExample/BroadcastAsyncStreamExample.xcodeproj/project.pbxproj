@@ -6,6 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A50C4FC32D0F525500678C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FBE2D0F525500678C75 /* Main.storyboard */; };
+		A50C4FC42D0F525500678C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FBC2D0F525500678C75 /* LaunchScreen.storyboard */; };
+		A50C4FC52D0F525500678C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FB92D0F525500678C75 /* Assets.xcassets */; };
+		A50C4FC62D0F525500678C75 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A50C4FBA2D0F525500678C75 /* Info.plist */; };
+		A50C4FC72D0F525500678C75 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FBF2D0F525500678C75 /* MainService.swift */; };
+		A50C4FC82D0F525500678C75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FC12D0F525500678C75 /* SceneDelegate.swift */; };
+		A50C4FC92D0F525500678C75 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FC02D0F525500678C75 /* MainViewController.swift */; };
+		A50C4FCA2D0F525500678C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FB82D0F525500678C75 /* AppDelegate.swift */; };
+		A50C4FCD2D0F529600678C75 /* BroadcastAsyncStreamExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FCB2D0F529600678C75 /* BroadcastAsyncStreamExampleTests.swift */; };
+		A50C4FD12D0F52A100678C75 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FCF2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */; };
+		A50C4FD22D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C4FCE2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests.swift */; };
+		A50C4FE22D0F569300678C75 /* BroadcastAsyncStream in Frameworks */ = {isa = PBXBuildFile; productRef = A50C4FE12D0F569300678C75 /* BroadcastAsyncStream */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A576F0252D0A14A000F3C3D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,47 +39,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50C4FB82D0F525500678C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A50C4FB92D0F525500678C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A50C4FBA2D0F525500678C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50C4FBB2D0F525500678C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A50C4FBD2D0F525500678C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A50C4FBF2D0F525500678C75 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		A50C4FC02D0F525500678C75 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A50C4FC12D0F525500678C75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A50C4FCB2D0F529600678C75 /* BroadcastAsyncStreamExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleTests.swift; sourceTree = "<group>"; };
+		A50C4FCE2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleUITests.swift; sourceTree = "<group>"; };
+		A50C4FCF2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A50C4FE02D0F567D00678C75 /* BroadcastAsyncStream */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BroadcastAsyncStream; path = ../../..; sourceTree = "<group>"; };
 		A576F00E2D0A149D00F3C3D5 /* BroadcastAsyncStreamExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastAsyncStreamExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576F0242D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576F02E2D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A576F0362D0A14A000F3C3D5 /* Exceptions for "BroadcastAsyncStreamExample" folder in "BroadcastAsyncStreamExample" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = A576F00D2D0A149D00F3C3D5 /* BroadcastAsyncStreamExample */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A576F0102D0A149D00F3C3D5 /* BroadcastAsyncStreamExample */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A576F0362D0A14A000F3C3D5 /* Exceptions for "BroadcastAsyncStreamExample" folder in "BroadcastAsyncStreamExample" target */,
-			);
-			path = BroadcastAsyncStreamExample;
-			sourceTree = "<group>";
-		};
-		A576F0272D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BroadcastAsyncStreamExampleTests;
-			sourceTree = "<group>";
-		};
-		A576F0312D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BroadcastAsyncStreamExampleUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A576F00B2D0A149D00F3C3D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50C4FE22D0F569300678C75 /* BroadcastAsyncStream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +82,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50C4FC22D0F525500678C75 /* BroadcastAsyncStreamExample */ = {
+			isa = PBXGroup;
+			children = (
+				A50C4FB82D0F525500678C75 /* AppDelegate.swift */,
+				A50C4FC12D0F525500678C75 /* SceneDelegate.swift */,
+				A50C4FB92D0F525500678C75 /* Assets.xcassets */,
+				A50C4FBA2D0F525500678C75 /* Info.plist */,
+				A50C4FBC2D0F525500678C75 /* LaunchScreen.storyboard */,
+				A50C4FBE2D0F525500678C75 /* Main.storyboard */,
+				A50C4FBF2D0F525500678C75 /* MainService.swift */,
+				A50C4FC02D0F525500678C75 /* MainViewController.swift */,
+			);
+			path = BroadcastAsyncStreamExample;
+			sourceTree = "<group>";
+		};
+		A50C4FCC2D0F529600678C75 /* BroadcastAsyncStreamExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A50C4FCB2D0F529600678C75 /* BroadcastAsyncStreamExampleTests.swift */,
+			);
+			path = BroadcastAsyncStreamExampleTests;
+			sourceTree = "<group>";
+		};
+		A50C4FD02D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A50C4FCE2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests.swift */,
+				A50C4FCF2D0F52A100678C75 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift */,
+			);
+			path = BroadcastAsyncStreamExampleUITests;
+			sourceTree = "<group>";
+		};
+		A50C4FDE2D0F55B100678C75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50C4FE02D0F567D00678C75 /* BroadcastAsyncStream */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A576F0052D0A149D00F3C3D5 = {
 			isa = PBXGroup;
 			children = (
-				A576F0102D0A149D00F3C3D5 /* BroadcastAsyncStreamExample */,
-				A576F0272D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleTests */,
-				A576F0312D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleUITests */,
+				A50C4FC22D0F525500678C75 /* BroadcastAsyncStreamExample */,
+				A50C4FCC2D0F529600678C75 /* BroadcastAsyncStreamExampleTests */,
+				A50C4FD02D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests */,
+				A50C4FDE2D0F55B100678C75 /* Frameworks */,
 				A576F00F2D0A149D00F3C3D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,11 +158,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A576F0102D0A149D00F3C3D5 /* BroadcastAsyncStreamExample */,
-			);
 			name = BroadcastAsyncStreamExample;
 			packageProductDependencies = (
+				A50C4FE12D0F569300678C75 /* BroadcastAsyncStream */,
 			);
 			productName = BroadcastAsyncStreamExample;
 			productReference = A576F00E2D0A149D00F3C3D5 /* BroadcastAsyncStreamExample.app */;
@@ -142,9 +178,6 @@
 			);
 			dependencies = (
 				A576F0262D0A14A000F3C3D5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A576F0272D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleTests */,
 			);
 			name = BroadcastAsyncStreamExampleTests;
 			packageProductDependencies = (
@@ -166,9 +199,6 @@
 			dependencies = (
 				A576F0302D0A14A000F3C3D5 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				A576F0312D0A14A000F3C3D5 /* BroadcastAsyncStreamExampleUITests */,
-			);
 			name = BroadcastAsyncStreamExampleUITests;
 			packageProductDependencies = (
 			);
@@ -188,6 +218,7 @@
 				TargetAttributes = {
 					A576F00D2D0A149D00F3C3D5 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 					A576F0232D0A14A000F3C3D5 = {
 						CreatedOnToolsVersion = 16.2;
@@ -232,6 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50C4FC32D0F525500678C75 /* Main.storyboard in Resources */,
+				A50C4FC42D0F525500678C75 /* LaunchScreen.storyboard in Resources */,
+				A50C4FC52D0F525500678C75 /* Assets.xcassets in Resources */,
+				A50C4FC62D0F525500678C75 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50C4FC72D0F525500678C75 /* MainService.swift in Sources */,
+				A50C4FC82D0F525500678C75 /* SceneDelegate.swift in Sources */,
+				A50C4FC92D0F525500678C75 /* MainViewController.swift in Sources */,
+				A50C4FCA2D0F525500678C75 /* AppDelegate.swift in Sources */,
+				A50C4FCD2D0F529600678C75 /* BroadcastAsyncStreamExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50C4FD12D0F52A100678C75 /* BroadcastAsyncStreamExampleUITestsLaunchTests.swift in Sources */,
+				A50C4FD22D0F52A100678C75 /* BroadcastAsyncStreamExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +323,32 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		A50C4FBC2D0F525500678C75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50C4FBB2D0F525500678C75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A50C4FBE2D0F525500678C75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50C4FBD2D0F525500678C75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		A576F0382D0A14A000F3C3D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Shakuro.BroadcastAsyncStreamExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -563,6 +627,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A50C4FE12D0F569300678C75 /* BroadcastAsyncStream */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BroadcastAsyncStream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A576F0062D0A149D00F3C3D5 /* Project object */;
 }

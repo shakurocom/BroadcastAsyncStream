@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50C4FDD2D0F557B00678C75 /* BroadcastAsyncStream in Frameworks */ = {isa = PBXBuildFile; productRef = A50C4FDC2D0F557B00678C75 /* BroadcastAsyncStream */; };
 		A53FF0B62D0E279300086783 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B52D0E279300086783 /* DetailsView.swift */; };
 		A53FF0B82D0E2C9900086783 /* DetailsWithViewModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B72D0E2C9900086783 /* DetailsWithViewModelView.swift */; };
 		A53FF0BA2D0E2CB000086783 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF0B92D0E2CA400086783 /* DetailsViewModel.swift */; };
-		A59601032D0C034300FB3088 /* BroadcastAsyncStream in Frameworks */ = {isa = PBXBuildFile; productRef = A59601022D0C034300FB3088 /* BroadcastAsyncStream */; };
 		A596010E2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */; };
 		A596010F2D0C048000FB3088 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010B2D0C048000FB3088 /* MainService.swift */; };
 		A59601102D0C048000FB3088 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596010C2D0C048000FB3088 /* ContentView.swift */; };
@@ -39,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50C4FDB2D0F556600678C75 /* BroadcastAsyncStream */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BroadcastAsyncStream; path = ../../..; sourceTree = "<group>"; };
 		A53FF0B52D0E279300086783 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		A53FF0B72D0E2C9900086783 /* DetailsWithViewModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWithViewModelView.swift; sourceTree = "<group>"; };
 		A53FF0B92D0E2CA400086783 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		A576EFD82D0A132400F3C3D5 /* BroadcastAsyncStreamExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BroadcastAsyncStreamExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFE82D0A132600F3C3D5 /* BroadcastAsyncStreamExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A576EFF22D0A132600F3C3D5 /* BroadcastAsyncStreamExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastAsyncStreamExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59601012D0C032000FB3088 /* BroadcastAsyncStream */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BroadcastAsyncStream; path = ../../..; sourceTree = "<group>"; };
 		A59601072D0C048000FB3088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A59601092D0C048000FB3088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A596010A2D0C048000FB3088 /* BroadcastAsyncStreamExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAsyncStreamExampleApp.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59601032D0C034300FB3088 /* BroadcastAsyncStream in Frameworks */,
+				A50C4FDD2D0F557B00678C75 /* BroadcastAsyncStream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 		A59601002D0C032000FB3088 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A59601012D0C032000FB3088 /* BroadcastAsyncStream */,
+				A50C4FDB2D0F556600678C75 /* BroadcastAsyncStream */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			);
 			name = BroadcastAsyncStreamExample;
 			packageProductDependencies = (
-				A59601022D0C034300FB3088 /* BroadcastAsyncStream */,
+				A50C4FDC2D0F557B00678C75 /* BroadcastAsyncStream */,
 			);
 			productName = BroadcastAsyncStreamExample;
 			productReference = A576EFD82D0A132400F3C3D5 /* BroadcastAsyncStreamExample.app */;
@@ -618,7 +618,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A59601022D0C034300FB3088 /* BroadcastAsyncStream */ = {
+		A50C4FDC2D0F557B00678C75 /* BroadcastAsyncStream */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BroadcastAsyncStream;
 		};

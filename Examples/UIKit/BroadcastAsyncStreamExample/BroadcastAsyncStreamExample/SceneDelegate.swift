@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  BroadcastAsyncStreamExample
-//
-//  Created by Sergey Popov on 12/11/24.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
