@@ -11,19 +11,16 @@ let package = Package(
     products: [
         .library(
             name: "BroadcastAsyncStream",
-            targets: ["BroadcastAsyncStream"]
-        )
+            targets: ["BroadcastAsyncStream"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
             name: "BroadcastAsyncStream",
-            dependencies: []
-        ),
+            dependencies: []),
         .testTarget(
             name: "BroadcastAsyncStreamTests",
-            dependencies: ["BroadcastAsyncStream"]
-        )
+            dependencies: ["BroadcastAsyncStream"]),
     ]
 )
