@@ -47,11 +47,12 @@ extension AsyncStream where Element: Sendable {
     }
 
     public func subscribe(_ onEvent: @escaping @MainActor (Element) -> Void) -> AnyAsyncTask {
-        return _Concurrency.Task(operation: {
+        let task = _Concurrency.Task(operation: {
             for await element in self {
                 onEvent(element)
             }
-        }).eraseToAnyTask
+        })
+        return task.eraseToAnyTask()
     }
 
     public func subscribe(store: inout [AnyAsyncTask], onEvent: @escaping @MainActor (Element) -> Void) {
