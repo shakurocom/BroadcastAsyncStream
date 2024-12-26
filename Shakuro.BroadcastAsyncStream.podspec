@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/shakurocom/BroadcastAsyncStream.git', :tag => s.version }
     s.resource_bundles = { 'BroadcastAsyncStream' => ['Resources/PrivacyInfo.xcprivacy'] }
     s.swift_versions   = ['5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.9']
-    s.source_files     = 'Sources/*'
+    s.source_files     = 'Sources/BroadcastAsyncStream/*'
     s.ios.deployment_target = '15.0'
 end
