@@ -8,7 +8,7 @@ public final class AnyAsyncTask {
     // MARK: - Initialization
 
     internal init<S, E>(_ task: Task<S, E>) {
-        cancelTaskBlock = {
+        cancelTaskBlock = { () -> Void in
             task.cancel()
         }
         isTaskCancelledBlock = { () -> Bool in
@@ -38,7 +38,7 @@ public final class AnyAsyncTask {
 
 extension Task {
 
-    public var eraseToAnyTask: AnyAsyncTask {
+    public func eraseToAnyTask() -> AnyAsyncTask {
         return AnyAsyncTask(self)
     }
 

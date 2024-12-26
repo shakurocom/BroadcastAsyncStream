@@ -22,7 +22,7 @@ final class MainService: ObservableObject {
             self?.value += 1
             self?.didSucceedChangeValue.send(self?.value ?? 0)
             self?.increaseValue()
-        }).eraseToAnyTask
+        }).eraseToAnyTask()
     }
 
 }
