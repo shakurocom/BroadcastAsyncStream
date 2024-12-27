@@ -1,7 +1,7 @@
 import Foundation
 
 @MainActor
-public final class BroadcastAsyncStream<Element: Sendable> {
+public final class BroadcastAsyncStream<Element> {
 
     private var store: [String: AsyncStream<Element>.Continuation]
 
@@ -36,7 +36,7 @@ public final class BroadcastAsyncStream<Element: Sendable> {
 }
 
 @MainActor
-extension AsyncStream where Element: Sendable {
+extension AsyncStream {
 
     // MARK: - Public
 
